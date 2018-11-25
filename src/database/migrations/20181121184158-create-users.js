@@ -31,7 +31,7 @@ module.exports = {
         defaultValue: false,
         type: Sequelize.BOOLEAN
       },
-      createt_at: {
+      created_at: {
         allowNull: false,
         type: Sequelize.DATE
       },
