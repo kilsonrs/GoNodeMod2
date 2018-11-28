@@ -8,15 +8,15 @@ const flash = require('connect-flash')
 class App {
   constructor () {
     this.express = express()
-    this.isDev = process.env.NODE_ENV !== 'production'
-
+    this.isDev = process.env.NODE_ENV !== 'production' // Armazena se está em ambiente de produção. Variável de embiente do node.
+    // Prestar atenção na ordem abaixo:
     this.middlewares()
     this.views()
     this.routes()
   }
 
   middlewares () {
-    this.express.use(express.urlencoded({ extended: false }))
+    this.express.use(express.urlencoded({ extended: false })) // pra lidar com formulários
     this.express.use(flash())
     this.express.use(
       session({
