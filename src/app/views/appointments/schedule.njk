@@ -1,0 +1,16 @@
+{% extends "_layouts/default.njk" %}
+
+{% block body %}
+<div class="content">
+  <ul class="providers">
+  {% for item in itens %}
+    <li class="provider">
+      <div>
+        <strong>{{ item.id }} - {{ item.date }}</strong>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+
+{% endblock %}

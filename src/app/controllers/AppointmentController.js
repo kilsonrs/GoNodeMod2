@@ -19,6 +19,10 @@ class AppointmentController {
     })
     return res.redirect('/app/dashboard')
   }
+  async schedule (req, res) {
+    console.log(req.params.provider)
+    return res.redirect('/app/dashboard')
+  }
 }
 
 module.exports = new AppointmentController()
