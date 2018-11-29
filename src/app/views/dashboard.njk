@@ -16,10 +16,10 @@
         </li>
       {% endfor %}
     </ul>
-    {% if user.provider === true %}
-      <a href="/app/mySchedule/{{ user.id }}" class="meusAgendamentos">Meus agendamentos</a>
-    {% endif %}
 
+    {% if user.provider === true %}
+      <a href="/app/schedule" class="meusAgendamentos">Meus agendamentos</a>
+    {% endif %}
     <a href="/app/logout" class="logout">Sair</a>
   </div>
 {% endblock %}
